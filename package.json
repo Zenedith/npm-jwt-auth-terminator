@@ -30,7 +30,9 @@
     "url": "https://github.com/Zenedith/npm-jwt-auth-terminator/issues"
   },
   "keywords": [
-    "restify"
+    "jwt",
+    "terminator",
+    "auth"
   ],
   "author": {
     "name": "Zenedith",
