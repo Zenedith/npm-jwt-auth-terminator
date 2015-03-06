@@ -1,20 +1,13 @@
-# my-restify-api
+# jwt-auth-terminator
 
-[![npm version](https://badge.fury.io/js/my-restify-api.svg)](http://badge.fury.io/js/my-restify-api)
-[![Coverage Status](https://coveralls.io/repos/Zenedith/npm-my-restify-api/badge.svg)](https://coveralls.io/r/Zenedith/npm-my-restify-api)
-[![Build Status](https://travis-ci.org/vehicle-history/npm-vehicle-history.svg?branch=master)](https://travis-ci.org/vehicle-history/npm-vehicle-history)
-[![Dependency Status](https://david-dm.org/Zenedith/npm-my-restify-api.svg)](https://david-dm.org/Zenedith/npm-my-restify-api)
-
-[![NPM](https://nodei.co/npm/my-restify-api.png?downloads=true&stars=true)](https://nodei.co/npm/my-restify-api/)
-
-My restify API backend
+JWT auth terminator
 
 ## Installation
 
 Download node at [nodejs.org](http://nodejs.org) and install it, if you haven't already.
 
 ```sh
-npm install my-restify-api --save
+npm install jwt-auth-terminator --save
 ```
 
 
@@ -27,14 +20,11 @@ npm test
 
 ## Dependencies
 
-- [assert-plus](https://github.com/mcavage/node-assert-plus): Extra assertions on top of node&#39;s assert module
 - [config](https://github.com/lorenwest/node-config): Configuration control for production node deployments
-- [jstoxml](https://github.com/davidcalhoun/jstoxml): Convert JSON to XML (for RSS, Podcasts, etc.)
-- [mime](https://github.com/broofa/node-mime): A comprehensive library for mime-type mapping
-- [newrelic](https://github.com/newrelic/node-newrelic): New Relic agent
-- [restify](https://github.com/mcavage/node-restify): REST framework
-- [vehicle-history](https://github.com/vehicle-history/npm-vehicle-history): Check vehicle history based on vin number.
+- [jwt-simple](https://github.com/hokaccha/node-jwt-simple): JWT(JSON Web Token) encode and decode module
+- [request](https://github.com/request/request): Simplified HTTP request client.
 - [winston](https://github.com/flatiron/winston): A multi-transport async logging library for Node.js
+- [winston-loggly](https://github.com/indexzero/winston-loggly): A Loggly transport for winston
 
 ## Dev Dependencies
 
@@ -42,11 +32,6 @@ npm test
 - [istanbul](https://github.com/gotwarlost/istanbul): Yet another JS code coverage tool that computes statement, line, function and branch coverage with module loader hooks to transparently add coverage when running tests. Supports all JS coverage use cases including unit tests, server side functional tests
 - [mocha](https://github.com/mochajs/mocha): simple, flexible, fun test framework
 - [rewire](https://github.com/jhnns/rewire): Easy dependency injection for node.js unit testing
-
-
-## Changelog
-
-[CHANGELOG](CHANGELOG.md)
 
 
 ## License
