@@ -1,0 +1,21 @@
+{
+  "newrelic": {
+    "license_key": "",
+    "logging": "info"
+  },
+  "proxy": {
+    "url": "http://destination.local",
+    "headers": {
+      "User-Agent": "request"
+    }
+  },
+  "jwt-decoder": {
+    "key": "",
+    "noVerify": true
+  },
+  "app": {
+    "port": 3000,
+    "authHeaderPrefix": "x-auth-",
+    "name": "jwt-auth-terminator"
+  }
+}
