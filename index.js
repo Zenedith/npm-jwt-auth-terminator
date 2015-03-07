@@ -2,6 +2,7 @@ var meta = require('./lib/meta');
 var server = require('./lib/server');
 var options = require('config');
 var ResponseError = require('./lib/error/responseError').ResponseError;
+var logger = require('./lib/logger/logger').logger;
 
 var exports = {};
 
@@ -23,6 +24,21 @@ app.on('UnauthorizedError', function (res, err) {
   res.end(JSON.stringify(response));
 
   return (true);
+});
+
+app.on('uncaughtException', function(req, res, err) {
+  logger.warn('uncaught application exception', err);
+
+  var response = new ResponseError('InternalServerError', 'Internal server error', 500, '');
+
+  res.writeHead(500, {'Content-Type': 'application/json'});
+  res.end(JSON.stringify(response));
+
+  return (true);
+});
+
+process.on('uncaughtException', function(err) {
+  logger.error('uncaught PROCESS exception: ', err);
 });
 
 
