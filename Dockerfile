@@ -34,7 +34,7 @@ ADD . /src
 # Install app dependencies
 RUN npm install
 
-EXPOSE  3000
+EXPOSE  2999
 
 CMD ["/sbin/my_init", "--", "bash", "/usr/local/bin/start"]
 
