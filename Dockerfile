@@ -34,7 +34,7 @@ ADD . /src
 # Install app dependencies
 RUN npm install
 
-EXPOSE  2999
+ENV PORT 2998
 
 CMD ["/sbin/my_init", "--", "bash", "/usr/local/bin/start"]
 
