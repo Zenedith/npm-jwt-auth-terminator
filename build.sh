@@ -1,2 +1,2 @@
 #!/bin/sh
-docker build -t jwt-auth-terminator .
+docker build -t zenedith/jwt-auth-terminator .
