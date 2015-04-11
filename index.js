@@ -64,6 +64,8 @@ fs.readFile('config/public.key', function (err, data) {
   process.on('uncaughtException', function (err) {
     logger.error('uncaught PROCESS exception: ', err);
   });
+
+  process.title = options.app.name;
 });
 
 exports.VERSION = meta.VERSION;
