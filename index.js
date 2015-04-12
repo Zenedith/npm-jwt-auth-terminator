@@ -26,7 +26,10 @@ fs.readFile('config/public.key', function (err, data) {
     var data = JSON.stringify(response);
     res.writeHead(400, {
       'Content-Type': 'application/json',
-      'Content-Length': data.length
+      'Content-Length': data.length,
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT',
+      'Access-Control-Allow-Headers': 'Content-Type, Accept, Authorization'
     });
     res.end(data);
 
@@ -39,8 +42,12 @@ fs.readFile('config/public.key', function (err, data) {
     var data = JSON.stringify(response);
     res.writeHead(401, {
       'Content-Type': 'application/json',
-      'Content-Length': data.length
+      'Content-Length': data.length,
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT',
+      'Access-Control-Allow-Headers': 'Content-Type, Accept, Authorization'
     });
+
     res.end(data);
 
     return (true);
@@ -54,7 +61,10 @@ fs.readFile('config/public.key', function (err, data) {
     var data = JSON.stringify(response);
     res.writeHead(500, {
       'Content-Type': 'application/json',
-      'Content-Length': data.length
+      'Content-Length': data.length,
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT',
+      'Access-Control-Allow-Headers': 'Content-Type, Accept, Authorization'
     });
     res.end(data);
 
