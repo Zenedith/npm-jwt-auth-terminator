@@ -5,13 +5,13 @@
   "main": "./index.js",
   "dependencies": {
     "config": "^1.11.0",
-    "jwt-simple": "^0.2.0",
+    "jwt-simple": "^0.3.0",
     "request": "^2.53.0",
-    "winston": "^0.9.0",
+    "winston": "^1.0.0",
     "winston-loggly": "^1.0.2"
   },
   "devDependencies": {
-    "chai": "^2.0.0",
+    "chai": "^3.0.0",
     "istanbul": "^0.3.5",
     "mocha": "^2.1.0",
     "rewire": "^2.3.0"
