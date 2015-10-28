@@ -1,4 +1,12 @@
 # jwt-auth-terminator
+[![npm version](https://badge.fury.io/js/jwt-auth-terminator.svg)](https://badge.fury.io/js/jwt-auth-terminator)
+[![bitHound Score](https://www.bithound.io/github/Zenedith/npm-jwt-auth-terminator/badges/score.svg)](https://www.bithound.io/github/Zenedith/npm-jwt-auth-terminator)
+[![Coverage Status](https://coveralls.io/repos/Zenedith/npm-jwt-auth-terminator/badge.svg?branch=master&service=github)](https://coveralls.io/github/Zenedith/npm-jwt-auth-terminator?branch=master)
+[![Build Status](https://travis-ci.org/Zenedith/npm-jwt-auth-terminator.svg)](https://travis-ci.org/Zenedith/npm-jwt-auth-terminator)
+[![Dependency Status](https://david-dm.org/Zenedith/npm-jwt-auth-terminator.svg)](https://david-dm.org/Zenedith/npm-jwt-auth-terminator)
+[![devDependency Status](https://david-dm.org/Zenedith/npm-jwt-auth-terminator/dev-status.svg)](https://david-dm.org/Zenedith/npm-jwt-auth-terminator#info=devDependencies)
+
+[![NPM](https://nodei.co/npm/jwt-auth-terminator.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/jwt-auth-terminator/)
 
 JWT auth terminator
 

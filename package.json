@@ -1,19 +1,19 @@
 {
   "name": "jwt-auth-terminator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "JWT auth terminator",
   "main": "./index.js",
   "dependencies": {
-    "config": "^1.14.0",
-    "jwt-simple": "^0.3.0",
-    "request": "^2.58.0",
-    "winston": "^1.0.1",
+    "config": "^1.16.0",
+    "jwt-simple": "^0.3.1",
+    "request": "^2.65.0",
+    "winston": "^1.1.1",
     "winston-loggly": "^1.1.0"
   },
   "devDependencies": {
-    "chai": "^3.0.0",
-    "istanbul": "^0.3.17",
-    "mocha": "^2.2.5",
+    "chai": "^3.4.0",
+    "istanbul": "^0.4.0",
+    "mocha": "^2.3.3",
     "rewire": "^2.3.4"
   },
   "scripts": {
@@ -42,6 +42,6 @@
     "node": ">=0.10.0"
   },
   "readmeFilename": "README.md",
-  "_id": "jwt-auth-terminator@0.1.0",
-  "_from": "jwt-auth-terminator@^0.1.0"
+  "_id": "jwt-auth-terminator@0.1.1",
+  "_from": "jwt-auth-terminator@^0.1.1"
 }
