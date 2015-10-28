@@ -18,7 +18,8 @@
   },
   "scripts": {
     "prepublish": "npm prune",
-    "test": "echo 'Missing test' && exit 0"
+    "test": "echo 'Missing test' && exit 0",
+    "test-travis": "echo 'Missing test' && exit 0"
   },
   "repository": {
     "type": "git",
