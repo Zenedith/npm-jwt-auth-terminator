@@ -1,6 +1,6 @@
 {
   "name": "jwt-auth-terminator",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "JWT auth terminator",
   "main": "./index.js",
   "dependencies": {
@@ -43,6 +43,6 @@
     "node": ">=0.10.0"
   },
   "readmeFilename": "README.md",
-  "_id": "jwt-auth-terminator@0.1.1",
-  "_from": "jwt-auth-terminator@^0.1.1"
+  "_id": "jwt-auth-terminator@0.1.2",
+  "_from": "jwt-auth-terminator@^0.1.2"
 }
