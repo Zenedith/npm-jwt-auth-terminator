@@ -7,17 +7,13 @@ ENV DEBCONF_NOWARNINGS yes
 # Workaround initramfs-tools running on kernel 'upgrade': <http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=594189>
 ENV INITRD No
 
+RUN curl -sL https://deb.nodesource.com/setup_5.x | bash -
+
+
 # make sure apt is up to date
 RUN \
-    sed -i 's/^# \(.*-backports\s\)/\1/g' /etc/apt/sources.list && \
     apt-get update -qqy && \
-    apt-get install -qqy wget curl
-
-# install nodejs and npm
-RUN \
-    apt-get install -qqy \
-      nodejs \
-      npm
+    apt-get install -qqy nodejs wget curl
 
 # Configure no init scripts to run on package updates.
 ADD docker/policy-rc.d /usr/sbin/policy-rc.d
