@@ -1,3 +1,5 @@
+'use strict';
+
 var fs = require('fs');
 var meta = require('./lib/meta');
 var server = require('./lib/server');
@@ -7,14 +9,14 @@ var logger = require('./lib/logger/logger').logger;
 
 var exports = {};
 
-fs.readFile('config/public.key', function (err, data) {
-  if (err) {
-    logger.debug('config/public.key read error: ', err);
-    throw err;
+fs.readFile('config/public.key', function (errKey, publicKeydata) {
+  if (errKey) {
+    logger.debug('config/public.key read error: ', errKey);
+    throw errKey;
   }
 
   options['jwt-decoder'] = {
-    key: data,
+    key: publicKeydata,
     noVerify: false
   };
 
@@ -33,7 +35,7 @@ fs.readFile('config/public.key', function (err, data) {
     });
     res.end(data);
 
-    return (true);
+    return true;
   });
 
   app.on('UnauthorizedError', function (res, err) {
@@ -50,7 +52,7 @@ fs.readFile('config/public.key', function (err, data) {
 
     res.end(data);
 
-    return (true);
+    return true;
   });
 
   app.on('uncaughtException', function (req, res, err) {
@@ -68,7 +70,7 @@ fs.readFile('config/public.key', function (err, data) {
     });
     res.end(data);
 
-    return (true);
+    return true;
   });
 
   process.on('uncaughtException', function (err) {
