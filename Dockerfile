@@ -13,7 +13,7 @@ RUN curl -sL https://deb.nodesource.com/setup_5.x | bash -
 # make sure apt is up to date
 RUN \
     apt-get update -qqy && \
-    apt-get install -qqy nodejs wget curl
+    apt-get install -qqy nodejs wget git curl
 
 # Configure no init scripts to run on package updates.
 ADD docker/policy-rc.d /usr/sbin/policy-rc.d
@@ -28,7 +28,7 @@ WORKDIR /src
 ADD . /src
 
 # Install app dependencies
-RUN npm install
+RUN npm install --production
 
 ENV PORT 2998
 
