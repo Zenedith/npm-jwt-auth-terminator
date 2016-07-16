@@ -1,6 +1,8 @@
 #!/bin/sh
-IMAGE="zenedith/jwt-auth-terminator"
-VERSION="$1"
 
-docker build $2 -t ${IMAGE}:${VERSION} .
-docker tag -f ${IMAGE}:${VERSION} ${IMAGE}:latest
+IMAGE="mobulum/jwt-auth-terminator"
+VERSION="$1"
+IMAGE_NAME="${IMAGE}:${VERSION}"
+
+docker build $2 -t $IMAGE_NAME .
+docker tag "$IMAGE_NAME" "${IMAGE}:latest"

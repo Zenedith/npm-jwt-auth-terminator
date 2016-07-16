@@ -17,6 +17,7 @@ EOF
 if [ -e "/src/config/runtime.json.source" ]
 then
   replace_vars "/src/config/runtime.json.source"
+  rm -f "/src/config/runtime.json.source"
 fi
 
 echo "Configuration settings"

@@ -1,3 +1,10 @@
 .git
 node_modules
 config/runtime.json
+config/runtimes.json
+release.sh
+build.sh
+*.iml
+*.ipr
+*.iws
+.idea

@@ -3,6 +3,13 @@
     "license_key": "",
     "logging": "info"
   },
+  "loggly": {
+    "level": "info",
+    "subdomain": "",
+    "inputToken": "",
+    "tags": ["jwt-auth-terminator"],
+    "json": true
+  },
   "proxy": {
     "url": "http://destination.local",
     "headers": {
@@ -15,7 +22,7 @@
   },
   "app": {
     "port": 3000,
-    "authHeaderPrefix": "x-auth-",
+    "authHeaderPrefix": "x-prefix-",
     "name": "jwt-auth-terminator"
   }
 }

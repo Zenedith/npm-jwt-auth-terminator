@@ -9,9 +9,9 @@ var logger = require('./lib/logger/logger').logger;
 
 var exports = {};
 
-fs.readFile('config/public.key', function (errKey, publicKeydata) {
+fs.readFile(options.app.oauthKeyPath, function (errKey, publicKeydata) {
   if (errKey) {
-    logger.debug('config/public.key read error: ', errKey);
+    logger.error('%s read error: ', options.app.oauthKeyPath, errKey);
     throw errKey;
   }
 

@@ -1,0 +1,25 @@
+{
+  "newrelic": {
+    "license_key": "${NEWRELIC_LICENSE}",
+    "logging": "info"
+  },
+  "loggly": {
+    "level": "info",
+    "subdomain": "${LOGGLY_SUBDOMAIN}",
+    "inputToken": "${LOGGLY_INPUT_TOKEN}",
+    "tags": ${LOGGLY_TAGS},
+    "json": true
+  },
+  "proxy": {
+    "url": "${PROXY_DESTINATION_URL}",
+    "headers": {
+      "User-Agent": "${PROXY_USER_AGENT}"
+    }
+  },
+  "app": {
+    "port": ${PORT},
+    "authHeaderPrefix": "${AUTH_HEADER_PREFIX}",
+    "oauthKeyPath": "${OAUTH_KEY_PATH}",
+    "name": "jwt-auth-terminator"
+  }
+}

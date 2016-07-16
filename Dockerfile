@@ -7,7 +7,7 @@ ENV DEBCONF_NOWARNINGS yes
 # Workaround initramfs-tools running on kernel 'upgrade': <http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=594189>
 ENV INITRD No
 
-RUN curl -sL https://deb.nodesource.com/setup_5.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 
 
 # make sure apt is up to date
@@ -30,7 +30,15 @@ ADD . /src
 # Install app dependencies
 RUN npm install --production
 
-ENV PORT 2998
+ENV PORT 3000
+ENV OAUTH_KEY_PATH config/public.key
+ENV NEWRELIC_LICENSE false
+ENV LOGGLY_SUBDOMAIN false
+ENV LOGGLY_INPUT_TOKEN false
+ENV LOGGLY_TAGS ["tag1", "tag2"]
+ENV PROXY_DESTINATION_URL localhost:80
+ENV PROXY_USER_AGENT false
+ENV AUTH_HEADER_PREFIX prefix
 
 CMD ["/sbin/my_init", "--", "bash", "/usr/local/bin/start"]
 
