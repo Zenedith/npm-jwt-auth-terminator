@@ -1,6 +1,6 @@
 {
   "name": "jwt-auth-terminator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "JWT auth terminator",
   "main": "./index.js",
   "dependencies": {
@@ -37,7 +37,7 @@
   "license": "MIT",
   "homepage": "https://github.com/Zenedith/npm-jwt-auth-terminator",
   "engines": {
-    "node": ">=5.8.0"
+    "node": ">=6.7.0"
   },
   "readmeFilename": "README.md",
   "_id": "jwt-auth-terminator@1.0.1",
