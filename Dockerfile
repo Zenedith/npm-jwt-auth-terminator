@@ -1,6 +1,6 @@
 # JWT auth token terminator
 # WEBSITE https://github.com/mobulum/npm-jwt-auth-terminator
-# VERSION 1.2.0
+# VERSION 1.3.0
 
 # Use phusion/baseimage as base image
 FROM phusion/baseimage:latest
