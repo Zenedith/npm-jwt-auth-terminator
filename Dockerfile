@@ -1,4 +1,10 @@
+# JWT auth token terminator
+# WEBSITE https://github.com/mobulum/npm-jwt-auth-terminator
+# VERSION 1.2.0
+
+# Use phusion/baseimage as base image
 FROM phusion/baseimage:latest
+MAINTAINER Mateusz Stępniak "contact@mobulum.com"
 
 ENV HOME /root
 ENV DEBIAN_FRONTEND noninteractive
@@ -7,7 +13,7 @@ ENV DEBCONF_NOWARNINGS yes
 # Workaround initramfs-tools running on kernel 'upgrade': <http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=594189>
 ENV INITRD No
 
-RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_7.x | bash -
 
 
 # make sure apt is up to date
@@ -43,4 +49,3 @@ ENV AUTH_HEADER_PREFIX prefix
 CMD ["/sbin/my_init", "--", "bash", "/usr/local/bin/start"]
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
